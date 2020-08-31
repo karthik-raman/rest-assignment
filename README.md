@@ -1,5 +1,6 @@
+
 # rest-assignment
-The following project demonstrates testing the GET, POST, PUT and DELETE methods of a rest API. 
+The following project demonstrates testing the GET, POST, PUT and DELETE methods of a rest API from https://jsonplaceholder.typicode.com/. 
 
 # Requirements
 - JAVA [version: 1.8]
