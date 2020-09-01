@@ -1,6 +1,8 @@
 
 # rest-assignment
-The following project demonstrates testing the GET, POST, PUT and DELETE methods of a rest API from https://jsonplaceholder.typicode.com/. 
+The following project demonstrates testing the GET, POST, PUT and DELETE services of a rest API from https://jsonplaceholder.typicode.com/ 
+
+# The project uses REST-Assured framework and junt to test the services.
 
 # Requirements
 - JAVA [version: 1.8]
@@ -25,4 +27,4 @@ The following project demonstrates testing the GET, POST, PUT and DELETE methods
    mvn clean install
    ```
    
-when the command is executing the testers will be excuted, and the log file for the testers can be found in "logs/resttest.html"
+# when the command is executing the testers will be excuted, and the log file for the testers can be found in "logs/resttest.html"
