@@ -1,9 +1,33 @@
 
 # rest-assignment
-The following project demonstrates testing the GET, POST, PUT and DELETE services of a rest API from https://jsonplaceholder.typicode.com/ 
+- The following project demonstrates testing the GET, POST, PUT and DELETE services from https://jsonplaceholder.typicode.com/ 
+- The project uses REST-Assured and Junit framework to test the services.
 
-# The project uses REST-Assured framework and junt to test the services.
-
+# APIs automated 
+- GET service :
+    - To fetch all records : https://jsonplaceholder.typicode.com/posts 
+    - To fetch specific record : https://jsonplaceholder.typicode.com/posts/1
+    - To trigger invalid call : https://jsonplaceholder.typicode.com/invalidposts 
+- POST service :
+    - create a record : https://jsonplaceholder.typicode.com/posts
+      body  { 
+              "title":"foo", 
+              "body": "bar",
+              "userId": 1
+            }
+ - PUT service :
+      - update a record : https://jsonplaceholder.typicode.com/posts
+        
+        body  { 
+                "title":"abc", 
+                "body": "xyz",
+                "userId": 1
+              }
+  - DELETE service :
+       - delete a record : https://jsonplaceholder.typicode.com/posts/1 
+        
+        
+        
 # Requirements
 - JAVA [version: 1.8]
 - Maven [version: 3.3.9]
