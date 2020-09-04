@@ -39,6 +39,7 @@ public class TestRun extends BaseTest {
 			
 		}catch (Exception e) {
 			log.error("GET call failed", e);
+			Assert.fail("GET call failed");
 		}
 	}
 
@@ -60,6 +61,7 @@ public class TestRun extends BaseTest {
 
 		} catch (Exception e) {
 			log.error("GET call failed", e);
+			Assert.fail("GET call failed");
 		}
 	}
 
@@ -74,6 +76,7 @@ public class TestRun extends BaseTest {
 			Assert.assertTrue("Record validation failed",trigger.validateResponseRecords(response,Configure.getValue("BODY")));
 		} catch (Exception e) {
 			log.error("POST call failed", e);
+			Assert.fail("POST call failed");
 		}
 	}
 	
@@ -88,6 +91,7 @@ public class TestRun extends BaseTest {
 			Assert.assertTrue("Record validation failed",trigger.validatePutResponseRecords(response,Integer.parseInt(Configure.getValue("RECORD"))));
 		} catch (Exception e) {
 			log.error("PUT call failed", e);
+			Assert.fail("PUT call failed");
 		}	
 	}
 	
@@ -100,6 +104,7 @@ public class TestRun extends BaseTest {
 			Assert.assertTrue("Response is not empty",trigger.validateEmptyResponse(response));
 		} catch (Exception e) {
 			log.error("DELETE call failed", e);
+			Assert.fail("DELETE call failed");
 		}
 	}
 	
@@ -113,6 +118,7 @@ public class TestRun extends BaseTest {
 			log.info(response.body().asString());
 		} catch (Exception e) {
 			log.error("GET call failed", e);
+			Assert.fail("GET call failed");
 		}
 	}
 }
